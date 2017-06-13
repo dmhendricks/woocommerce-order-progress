@@ -26,9 +26,6 @@ class Plugin {
     // Create Custom Post Type(s)
     //new CPT();
 
-    // Create custom widgets
-    //new WidgetLoader();
-
     // Deploy shortcodes
     //new Shortcodes;
 
