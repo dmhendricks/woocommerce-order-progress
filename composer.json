@@ -1,0 +1,61 @@
+{
+  "name": "dmhendricks/woocommerce-order-progress",
+  "type": "wordpress-plugin",
+  "description": "Displays an order status progress bar on WooCommerce order details pages.",
+  "keywords": ["woocommerce", "order", "details", "status", "progress"],
+  "homepage": "https://danhendricks.com",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Daniel M. Hendricks",
+      "homepage": "https://danhendricks.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/dmhendricks/woocommerce-order-progress/issues/",
+    "source": "https://github.com/dmhendricks/woocommerce-order-progress/"
+  },
+  "repositories": [
+      {
+          "type": "package",
+          "package": {
+            "name": "jashkenas/underscore",
+            "version": "1.8.3",
+            "dist": {
+              "type": "zip",
+              "url": "https://github.com/jashkenas/underscore/archive/1.8.3.zip",
+              "reference": "master"
+            },
+            "autoload": {
+                "classmap": ["."]
+            }
+        }
+      }
+  ],
+  "require": {
+    "php": ">=5.3.2",
+    "mnsami/composer-custom-directory-installer": "*",
+    "tgmpa/tgm-plugin-activation": "^2.6.1",
+    "htmlburger/carbon-fields": "dev-master",
+    "twig/twig": "^2.0",
+    "composer/installers": "*"
+  },
+  "extra":{
+    "installer-paths":{
+      "./vendor/carbon-fields": ["htmlburger/carbon-fields"]
+    }
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "TwoLab\\WooOrderProgress\\": "app/"
+    },
+    "files": ["vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php"]
+  },
+  "scripts": {
+      "pre-autoload-dump": [
+        "find ./vendor -name .git* -exec rm -rf {} +"
+      ]
+  }
+}
