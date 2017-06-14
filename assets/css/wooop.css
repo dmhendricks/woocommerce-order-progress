@@ -1,0 +1,15 @@
+/* Core Site Style - Example */
+a { color: #663399; }
+
+a:hover { color: #9966CC; }
+
+h1.site-title { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+
+h1.site-title a { text-decoration: underline; }
+
+/* Media Queries - Example */
+@media (max-width: 575px) { body { font-size: 115%; } }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoid29vb3AuY3NzIiwic291cmNlcyI6WyJ3b29vcC5zY3NzIiwiX3ZhcmlhYmxlcy5zY3NzIiwiX2NvcmUuc2NzcyIsIl9tZWRpYS1xdWVyaWVzLnNjc3MiXSwibWFwcGluZ3MiOiJBRUFBLCtCQUVHO0FBRUgsQUFBQSxDQUFDLENBQUMsRUFDQSxLQUFLLEVER00sT0FBTyxHQ0VuQjs7QUFORCxBQUFBLENBQUMsQUFHRSxNQUFNLENBQUMsRUFDTixLQUFLLEVEQ1UsT0FBTyxHQ0F2Qjs7QUFHSCxBQUFBLEVBQUUsQUFFQyxXQUFXLENBQUMsRUFDWCxXQUFXLEVEYkssbUJBQW1CLEVBQUUsY0FBYyxFQUFFLFFBQVEsRUFBRSxLQUFLLEdDa0JyRTs7QUFSSCxBQUtJLEVBTEYsQUFFQyxXQUFXLENBR1YsQ0FBQyxDQUFDLEVBQ0EsZUFBZSxFQUFFLFNBQVUsR0FDNUI7O0FDbkJMLDZCQUVHO0FBRUgsTUFBTSxFQUFMLFNBQVMsRUFBRSxLQUFLLElBQ2YsQUFBQSxJQUFJLENBQUMsRUFDSCxTQUFTLEVBQUUsSUFDWixHQUFDIiwibmFtZXMiOltdfQ== */
+
+/*# sourceMappingURL=wooop.css.map */

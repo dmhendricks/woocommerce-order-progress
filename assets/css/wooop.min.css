@@ -1,0 +1,6 @@
+a{color:#639}
+a:hover{color:#96c}
+h1.site-title{font-family:"Palatino Linotype","Book Antiqua",Palatino,serif}
+h1.site-title a{text-decoration:underline}
+@media(max-width:575px){body{font-size:115%}
+}
