@@ -16,7 +16,7 @@ Although this plugin may function with lesser versions, only recent versions of 
 
 ## Known Compatibility Issues
 
-* Carbon Fields <1.6: This plugin will fail if you have a version of [Carbon Fields](https://wordpress.org/plugins/carbon-fields/) installed that is lower than version 1.6 (including any plugins that use Carbon Fields as a loaded dependency). If you have Carbon Fields installed, it is recommended that you upgrade to at least version 1.6.
+* **Carbon Fields**: This plugin will fail if you have a version of [Carbon Fields](https://wordpress.org/plugins/carbon-fields/) installed that is lower than version 1.6 (including any plugins that use Carbon Fields as a loaded dependency). If you have Carbon Fields installed, it is recommended that you upgrade to at least version 1.6.
 
 ## Installation
 
