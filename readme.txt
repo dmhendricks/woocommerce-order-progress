@@ -19,6 +19,10 @@ Although this plugin may function with lesser versions, only recent versions of 
 * WordPress: 3.8 or higher
 * WooCommerce: 3.0 or higher
 
+= Known Compatibility Issues =
+
+* Carbon Fields <1.6: This plugin will fail if you have a version of [Carbon Fields](https://wordpress.org/plugins/carbon-fields/) installed that is lower than version 1.6 (including any plugins that use Carbon Fields as a loaded dependency). If you have Carbon Fields installed, it is recommended that you upgrade to at least version 1.6.
+
 == Installation ==
 = Standard Installation =
 1. Download the latest ZIP archive from [GitHub](https://github.com/dmhendricks/woocommerce-order-progress/releases).
