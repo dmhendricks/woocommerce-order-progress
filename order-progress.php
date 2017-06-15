@@ -44,6 +44,4 @@ new \TwoLab\WooOrderProgress\Plugin(array(
 	'object_cache_expire' => 72, // In hours
 	'prefix' => 'woo_progress_'
 ));
-// https://codepen.io/abhisharma2/pen/vEKWVo
-// https://codepen.io/manit/pen/uFnJw
 ?>
