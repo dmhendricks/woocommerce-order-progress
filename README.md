@@ -4,7 +4,15 @@
 
 ## Description
 
-This plugin adds a order status progress bar to the cutomer's order details page.
+A plugin for WooCommerce that displays an order progress bar on the customer's order details page.
+
+## Requirements
+
+Although this plugin may function with lesser versions, only recent versions of the following are actively tested and supported:
+
+* PHP: 5.6-7.1
+* WordPress: 3.8 or higher
+* WooCommerce: 3.0 or higher
 
 ## Installation
 
@@ -18,11 +26,9 @@ This plugin adds a order status progress bar to the cutomer's order details page
 
 1. At command prompt, change to your `wp-content/plugins` directory.
 2. Clone the repository: `git clone https://github.com/dmhendricks/woocommerce-order-progress.git`.
-4. Run `composer install` to install dependencies and autoload namespaces.
-
+3. Run `composer install` to install dependencies and autoload namespaces.
 
 ## Change Log
-
 
 #### 0.1.0 - June 13, 2017
 

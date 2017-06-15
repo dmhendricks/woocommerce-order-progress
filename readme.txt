@@ -2,32 +2,33 @@
 Contributors: hendridm
 Tags: woocommerce,order,details,status,progress
 Donate link: https://paypal.me/danielhendricks
-Requires at least: 4.0
+Requires at least: 3.8
 Tested up to: 4.8
 License: GPL-2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A plugin for WooCommerce that displays an order progress bar on the customer's order details page.
+Add an order progress bar to customer's order detail page.
 
 == Description ==
-This is a boilerplate WordPress plugin featuring namespace autoloading and integration with [Carbon Fields](https://github.com/htmlburger/carbon-fields).
+A plugin for WooCommerce that displays an order progress bar on the customer's order details page.
 
-It is intended to be used as a starting point for creating quick WordPress plugins.
+= Requirements =
+Although this plugin may function with lesser versions, only recent versions of the following are actively tested and supported:
+
+* PHP: 5.6-7.1
+* WordPress: 3.8 or higher
+* WooCommerce: 3.0 or higher
 
 == Installation ==
+= Standard Installation =
+1. Download the latest ZIP archive from [GitHub](https://github.com/dmhendricks/woocommerce-order-progress/releases).
+2. In WP Admin, click **Plugins** > **Add New**.
+3. Once installation is finished, **Activate** the plugin.
 
-= Zip File =
-
-1. Download the ZIP distribution from Github.
-2. Extract to your plugin folder.
-3. Activate the plugin in WordPress admin.
-4. Go to Settings > WordPress Base Plugin to see a sample settings page.
-
-= Git Clone =
-
-1. Clone the plugin from the GitHub repo to your WordPress plugins folder.
-3. Activate the plugin in WordPress admin.
-4. Go to Settings > WordPress Base Plugin to see a sample settings page.
+= Composer =
+1. At command prompt, change to your `wp-content/plugins` directory.
+2. Clone the repository: `git clone https://github.com/dmhendricks/woocommerce-order-progress.git`.
+3. Run `composer install` to install dependencies and autoload namespaces.
 
 == Frequently Asked Questions ==
 = Q. What is Composer? =
