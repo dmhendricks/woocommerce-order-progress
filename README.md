@@ -24,6 +24,6 @@ This plugin adds a order status progress bar to the cutomer's order details page
 ## Change Log
 
 
-#### 0.1.0 - June 15, 2017
+#### 0.1.0 - June 13, 2017
 
 * Initial commit
