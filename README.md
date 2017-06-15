@@ -8,11 +8,9 @@ A plugin for WooCommerce that displays an order progress bar on the customer's o
 
 ## Requirements
 
-Although this plugin may function with lesser versions, only recent versions of the following are actively tested and supported:
-
-* PHP: 5.6-7.1
+* PHP: 5.5 or higher
 * WordPress: 3.8 or higher
-* WooCommerce: 3.0 or higher
+* WooCommerce: 2.6 or higher
 
 ## Known Compatibility Issues
 
