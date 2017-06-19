@@ -42,6 +42,6 @@ new \TwoLab\WooOrderProgress\Plugin(array(
 	'textdomain' => 'woocommerce-order-progress',
 	'object_cache_group' => 'woop_cache',
 	'object_cache_expire' => 72, // In hours
-	'prefix' => 'woo_progress_'
+	'prefix' => 'wooop_'
 ));
 ?>
