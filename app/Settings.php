@@ -10,13 +10,16 @@ class Settings extends Plugin {
     * Create a options/settings page in WP Admin
     */
   function __construct() {
+    // Add custom order statuses: https://www.sellwithwp.com/woocommerce-custom-order-status-2/
 
     // Create WooCommerce > Settings > Progress Bar tab
     add_filter( 'woocommerce_settings_tabs_array', array($this, 'add_woocommerce_settings_tab'), 25 );
 
     // Add options
-    add_action( 'woocommerce_settings_tabs_order_progress',  function() {
-      woocommerce_admin_fields( $this->woocommerce_order_progress_get_settings() );
+    add_action( 'plugins_loaded', function() {
+      add_action( 'woocommerce_settings_tabs_order_progress',  function() {
+        woocommerce_admin_fields( $this->woocommerce_order_progress_get_settings() );
+      });
     });
 
     // Save settings event
@@ -24,10 +27,12 @@ class Settings extends Plugin {
 
     add_action( 'woocommerce_purchase_note_order_statuses', array($this, 'nolo_custom_field_display_cust_order_meta'), 10, 1 );
 
+    /*
     $loader = new Twig_Loader_Filesystem('/path/to/templates');
     $twig = new Twig_Environment($loader, array(
         'cache' => '/path/to/compilation_cache',
     ));
+    */
 
   }
 
@@ -111,9 +116,17 @@ class Settings extends Plugin {
         ),
         'status_types' => array(
             'name' => __( 'Displayed Statuses', self::$settings['textdomain'] ),
-            'type' => 'textarea',
-            'css' => 'display: none;',
+            'type' => 'multiselect',
+            'options' => wc_get_order_statuses(),
+            'desc' => '<br />Choose the order statuses that will display on the order details page.<br />Use Control+Click (Windows) or Command+Click (OS X) to select multiple.',
             'id'   => self::$settings['textdomain'].'status_types'
+        ),
+        'custom_status_types' => array(
+            'name' => __( 'Custom Order Status', self::$settings['textdomain'] ),
+            'type' => 'textarea',
+            'css' => 'width: 100%; max-width: 600px; height: 85px;',
+            'desc' => __( 'Specify additional order statuses, each on a new line. Examples: <em>Awaiting shipment, Shipped, etc</em> (Optional)', self::$settings['textdomain'] ),
+            'id'   => self::$settings['textdomain'].'title'
         ),
         'title' => array(
             'name' => __( 'Title', self::$settings['textdomain'] ),
