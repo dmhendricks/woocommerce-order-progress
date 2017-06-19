@@ -40,6 +40,7 @@ class EnqueueScripts extends Plugin {
     // Load custom scripts in admin
     wp_enqueue_script( 'wooop-vendor', plugins_url('/assets/js/wooop-vendor.min.js', dirname(__FILE__)), array('jquery'), $this->get_script_version('assets/js/wooop-vendor.min.js') );
     wp_enqueue_script( 'wooop-admin', plugins_url('/assets/js/wooop-admin.js', dirname(__FILE__)), array('wooop-vendor'), $this->get_script_version('assets/js/wooop-admin.js'), true );
+    wp_localize_script( 'wooop-admin', 'ajax_filter_params', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 
   }
 
